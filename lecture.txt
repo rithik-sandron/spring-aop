@@ -1,0 +1,35 @@
+Java and SpringBoot:
+
+Spring AOP:
+
+Create an Aspect class and methods inside this class(methods inside aspect class is known as advices).
+With these methods we can run custom code before, after or around a certain method or class or a package.
+
+1. Annotations: 
+    @Aspect
+    @Component
+    @Before
+    @After
+    @AfterReturning
+    @AfterThrowing
+    @Around
+    @PointCut
+
+    @Before, @After, @Around annotaions has their own unique args that we can pass.
+
+2. Point cuts:
+    @PointCut(“execution(<method-signature>)”) -> takes in method
+    @PointCut(“execution(* *(..))”) -> generic approach of execution
+    @PointCut(“within(<class or package>)”)  -> takes in class or package name
+    @PointCut(“@annotation(Log)”) -> custom annotation
+
+3. JoinPoint
+    This is an object that advices can receive which contains useful info regarding the method for which top is applied
+
+
+
+Design patterns:
+Singleton
+Proxy (factory)
+Builder
+
